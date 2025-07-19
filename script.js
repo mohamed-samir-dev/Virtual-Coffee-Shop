@@ -64,7 +64,7 @@
                         this.conversationState = "customizing";
                         return this.askCustomizationQuestions(selectedDrink);
                     } else {
-                        return "لم أفهم طلبك. هل يمكنك إخباري أي مشروب تريد؟ أم تريد مني أن أقترح عليك شيئاً بناءً على تفضيلاتك؟";
+                        return "لم أفهم طلبك.من فضلك، اكتب الرسالة بنفس الصيغة الظاهرة في الاقتراحات ليتعرف عليها المساعد بشكل صحيح";
                     }
                 } else if (this.conversationState === "customizing") {
                     return this.handleCustomization(input);
