@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مساعد مقهى افتراضي ذكي</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>☕ المقهى الافتراضي</h1>
+            <p>مساعد الباريستا الذكي</p>
+        </div>
+        <div class="chat-container" id="chatContainer">
+            <div class="message agent-message">
+                <strong>الباريستا الذكي:</strong> أهلاً وسهلاً بك في المقهى الافتراضي! ☕<br><br>
+                أنا هنا لمساعدتك في العثور على المشروب المثالي!<br><br>
+                <strong>قائمة المشروبات:</strong><br>
+                🔸 <strong>القهوة:</strong> إسبريسو، أمريكانو، لاتيه، كابتشينو، موكا، ماكياتو<br>
+                🔸 <strong>الشاي:</strong> شاي أخضر، شاي أسود، شاي عشبي<br>
+                🔸 <strong>المشروبات الباردة:</strong> قهوة مثلجة، فرابتشينو، شاي مثلج<br><br>
+                ماذا يمكنني أن أحضر لك اليوم؟
+            </div>
+        </div>
+        <div class="input-container">
+            <div class="input-group">
+                <button onclick="sendMessage()">إرسال</button>
+                <input type="text" id="userInput" placeholder="اكتب رسالتك هنا..." onkeypress="handleKeyPress(event)">
+            </div>
+            <div class="quick-actions">
+                <div class="quick-btn" onclick="quickMessage('أظهر لي القائمة')">📋 القائمة الكاملة</div>
+                <div class="quick-btn" onclick="quickMessage('أريد لاتيه')">☕ لاتيه</div>
+                <div class="quick-btn" onclick="quickMessage('اقترح شيئاً حلواً')">🍯 مشروبات حلوة</div>
+                <div class="quick-btn" onclick="quickMessage('شيء بارد من فضلك')">🧊 مشروبات باردة</div>
+                <div class="quick-btn" onclick="quickMessage('ماذا تنصحني؟')">💡 اقتراحات</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
